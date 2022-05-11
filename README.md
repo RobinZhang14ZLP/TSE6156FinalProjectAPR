@@ -21,6 +21,24 @@ ARJA
 
 Cardumen
 
+### Setup
+
+1. Install all prerequisite for jenv of java 1.7
+
+2. Install all prerequisite for Defects4J, configure with Perl files they provide
+
+3. Install all needed APR tools, from the list above (not necessarily all of them)
+
+4. Run the command in the root diretory, add the name of the APR tool needed as an argument. 
+'''
+bash ./setup.sh [$1] [$2] ...
+'''
+
+5. Run the command to use the framework, and include the needed aprtool name as arguments
+'''
+bash ./aprtools/lib/java/main.sh $program_dir $test_dir $verify_dir [$aprtool]
+'''
+
 
 ## Directory Structure
 |--REAMME.md
